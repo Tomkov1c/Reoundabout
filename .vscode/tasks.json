@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/RoundaboutrunClientRoundabout",
+			"script": "runClient",
+			"description": "Runs the client run.",
+			"group": "neogradle/runs",
+			"project": "Roundabout",
+			"buildFile": "/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build.gradle",
+			"rootProject": "Roundabout",
+			"projectFolder": "/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout",
+			"workspaceFolder": "/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: runClient"
+		}
+	]
+}
