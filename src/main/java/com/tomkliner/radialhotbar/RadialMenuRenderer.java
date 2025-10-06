@@ -12,13 +12,13 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 
 public class RadialMenuRenderer {
-    private static final int RADIUS = 80;
-    private static final int ITEM_SIZE = 32;
     private static final int SLOT_COUNT = 9;
-    private static final int SLOT_RENDER_SIZE = 32; 
-    private static final int ACTUAL_TEXTURE_SIZE = 32;
 
-    // Texture locations - can be overridden by resource packs
+    private static int itemSize = 32;
+    private static int slotSize = 32;
+    private static int slotRadius = 80;
+
+    // Texture locations
     private static final ResourceLocation SLOT_TEXTURE = ResourceLocation.fromNamespaceAndPath("roundabout", "textures/gui/radial_slot.png");
     private static final ResourceLocation SLOT_HOVERED_TEXTURE = ResourceLocation.fromNamespaceAndPath("roundabout", "textures/gui/radial_slot_hovered.png");
 
@@ -36,8 +36,17 @@ public class RadialMenuRenderer {
         }
     }
 
+    public RadialMenuRenderer() {    }
+
+    public static void updateFromConfig() {
+        itemSize = Config.ITEM_SIZE.get();
+        slotSize = Config.SLOT_SIZE.get();
+        slotRadius = Config.RADIAL_MENU_RADIUS.get();
+    }
+
     public void onMenuOpen() {
         Minecraft mc = Minecraft.getInstance();
+
         if (mc.mouseHandler != null) {
             mouseStartX = mc.mouseHandler.xpos();
             mouseStartY = mc.mouseHandler.ypos();
@@ -89,35 +98,36 @@ public class RadialMenuRenderer {
 
         for (int i = 0; i < SLOT_COUNT; i++) {
             double angle = (Math.PI * 2 * i / SLOT_COUNT) - Math.PI / 2;
-            int x = centerX + (int) (Math.cos(angle) * RADIUS);
-            int y = centerY + (int) (Math.sin(angle) * RADIUS);
+            int x = centerX + (int) (Math.cos(angle) * slotRadius);
+            int y = centerY + (int) (Math.sin(angle) * slotRadius);
 
             boolean isHovered = (i == hoveredSlot);
             ResourceLocation texture = isHovered ? SLOT_HOVERED_TEXTURE : SLOT_TEXTURE;
 
+            // Draw slot background
             graphics.blit(
                 RenderPipelines.GUI_TEXTURED,
                 texture,
-                x - SLOT_RENDER_SIZE / 2,
-                y - SLOT_RENDER_SIZE / 2,
+                x - slotSize / 2,
+                y - slotSize / 2,
                 0.0f, 0.0f,
-                SLOT_RENDER_SIZE,
-                SLOT_RENDER_SIZE,
-                SLOT_RENDER_SIZE,
-                SLOT_RENDER_SIZE
+                slotSize,
+                slotSize,
+                slotSize,
+                slotSize
             );
 
             // Draw item
             ItemStack stack = inventory.getItem(i);
             if (!stack.isEmpty()) {
-                graphics.renderItem(stack, x - ITEM_SIZE / 2 + 8, y - ITEM_SIZE / 2 + 8);
-                graphics.renderItemDecorations(mc.font, stack, x - ITEM_SIZE / 2 + 8, y - ITEM_SIZE / 2 + 8);
+                graphics.renderItem(stack, x - itemSize / 2 + 8, y - itemSize / 2 + 8);
+                graphics.renderItemDecorations(mc.font, stack, x - itemSize / 2 + 8, y - itemSize / 2 + 8);
             }
 
             // Draw slot number
             String slotNum = String.valueOf(i + 1);
             int textX = x - mc.font.width(slotNum) / 2;
-            int textY = y + ITEM_SIZE / 2 + 4;
+            int textY = y + itemSize / 2 + 4;
             graphics.drawString(mc.font, slotNum, textX, textY, isHovered ? 0xFFFFFF00 : 0xFFFFFFFF);
         }
 

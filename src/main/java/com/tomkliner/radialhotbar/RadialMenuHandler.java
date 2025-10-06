@@ -9,7 +9,7 @@ import net.neoforged.neoforge.client.event.ViewportEvent;
 
 public class RadialMenuHandler {
     private boolean isMenuOpen = false;
-    private final RadialMenuRenderer renderer = new RadialMenuRenderer();
+    public static final RadialMenuRenderer renderer = new RadialMenuRenderer();
     private static final ResourceLocation HOTBAR_LAYER = ResourceLocation.withDefaultNamespace("hotbar");
     private float savedYaw = 0;
     private float savedPitch = 0;

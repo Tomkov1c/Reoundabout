@@ -12,13 +12,13 @@
       "projectName": "Roundabout",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\clientRunProgramArgs.txt"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003droundabout%%D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\bin\\main"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003droundabout%%/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/bin/main"
       ],
-      "cwd": "${workspaceFolder}\\run",
+      "cwd": "${workspaceFolder}/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"
@@ -34,13 +34,13 @@
       "projectName": "Roundabout",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\dataRunProgramArgs.txt"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/dataRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\dataRunVmArgs.txt",
-        "-Dfml.modFolders\u003droundabout%%D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\bin\\main"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003droundabout%%/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/bin/main"
       ],
-      "cwd": "${workspaceFolder}\\run",
+      "cwd": "${workspaceFolder}/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"
@@ -56,13 +56,13 @@
       "projectName": "Roundabout",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/gameTestServerRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\gameTestServerRunVmArgs.txt",
-        "-Dfml.modFolders\u003droundabout%%D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\bin\\main"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003droundabout%%/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/bin/main"
       ],
-      "cwd": "${workspaceFolder}\\run",
+      "cwd": "${workspaceFolder}/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"
@@ -78,13 +78,13 @@
       "projectName": "Roundabout",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\serverRunProgramArgs.txt"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\build\\moddev\\serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003droundabout%%D:\\OneDrive\\OneDrive - Tomkovic\\Backup\\PC\\Dokumenti\\Works\\Roundabout\\bin\\main"
+        "@/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003droundabout%%/Users/tomkliner/Library/CloudStorage/OneDrive-Tomkovic/Backup/PC/Dokumenti/Works/Roundabout/bin/main"
       ],
-      "cwd": "${workspaceFolder}\\run",
+      "cwd": "${workspaceFolder}/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"

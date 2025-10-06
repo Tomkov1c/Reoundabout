@@ -1,6 +1,13 @@
 {
-  "key.categories.roundabout": "Roundabout Radial Menu",
+  "roundabout.configuration.title": "Roundabout Settings",
+  "roundabout.configuration.section.roundabout.common.toml.title": "Common Settings",
+
+  "roundabout.configuration.radialMenuRadius": "Radial Menu Radius",
+  "roundabout.configuration.radialMenuRadius.tooltip": "Radius of the radial menu in pixels.",
+
+  "roundabout.configuration.itemSize": "Item Slot Size",
+  "roundabout.configuration.itemSize.tooltip": "Size of each item slot in the radial menu.",
+
   "key.roundabout.open_radial_menu": "Open Radial Menu",
-  "roundabout.config.radialMenuRadius": "Radial Menu Radius",
-  "roundabout.config.itemSize": "Item Size"
+  "key.categories.roundabout.radial_menu": "Roundabout Radial Menu"
 }

@@ -17,5 +17,8 @@ public class Roundabout {
     public Roundabout(IEventBus modEventBus, ModContainer modContainer) {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         LOGGER.info("Roundabout Radial Menu Mod Initialized");
+
+        ConfigHandler configHandler = new ConfigHandler(RadialMenuHandler.renderer);
+        modEventBus.register(configHandler);
     }
 }
