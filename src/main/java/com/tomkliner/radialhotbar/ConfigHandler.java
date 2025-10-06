@@ -11,11 +11,6 @@ public class ConfigHandler {
     @SubscribeEvent
     public void onConfigReload(ModConfigEvent.Reloading event) {
         if (event.getConfig().getSpec() == Config.SPEC) {
-            Roundabout.LOGGER.info("[Roundabout] Config reloaded. Updated radial menu values: radius={}, slotSize={}, itemSize={}",
-                    Config.RADIAL_MENU_RADIUS.get(),
-                    Config.SLOT_SIZE.get(),
-                    Config.ITEM_SIZE.get());
-
             RadialMenuRenderer.updateFromConfig();
         }
     }
